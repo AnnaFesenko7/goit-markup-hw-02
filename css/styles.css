@@ -5,21 +5,21 @@
   --accent-color: #2196f3;
   --extra-background-color: #2f303a;
   --extra-title-color: #ffffff;
+  --buttons-color: #f5f4fa;
 }
 
 /* фон #E5E5E5 */
 
 body {
-  background-color: #e5e5e5;
-  font-family: Roboto;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
 }
 /* site nav */
 .logo {
-  font-family: Raleway;
-  font-style: normal;
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
@@ -27,25 +27,20 @@ body {
   color: var(--accent-color);
 }
 .site-nav .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .auth .link {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--extra-text-color);
 }
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
+
 .list {
   list-style: none;
 }
@@ -58,20 +53,18 @@ body {
   background-color: var(--extra-background-color);
 }
 .hero-title {
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--extra-title-color);
 }
-.button {
-  font-style: normal;
-  font-weight: bold;
+.hero > .button {
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
@@ -81,49 +74,40 @@ body {
 }
 /* features */
 .features-list .title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
 .features-list .text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--extra-text-color);
 }
 
 /* sections */
 .section-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 .section-list .title {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 .section-list .text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 19px;
-  text-align: center;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--extra-text-color);
 }
@@ -133,21 +117,53 @@ footer {
   background-color: var(--extra-background-color);
 }
 .footer-auth .link {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.logo.footer {
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+footer .logo {
   color: var(--extra-title-color);
 }
 .address {
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--extra-title-color);
+}
+
+/* css для портфолио */
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--buttons-color);
+  color: var(--primary-text-color);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--accent-color);
+  color: var(--extra-title-color);
+}
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.portfolio-list .text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--extra-text-color);
 }
