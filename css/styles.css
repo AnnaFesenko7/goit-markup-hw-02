@@ -136,6 +136,10 @@ footer .logo {
   color: var(--extra-title-color);
 }
 
+address {
+  font-style: inherit;
+}
+
 /* css для портфолио */
 .button {
   font-weight: 500;
